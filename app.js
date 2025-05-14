@@ -13,11 +13,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
 
 app.get('/', (request, response) => {
-    response.redirect('/index');
+    response.redirect('/testIndex');
 });
 
-app.get('/index', (request, response) => {
-    response.render('index');
+app.get('/testIndex', (request, response) => {
+    response.render('testIndex');
 });
 
 app.listen(8080, () => {
