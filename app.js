@@ -27,6 +27,11 @@ app.get('/testIndex', (request, response) => {
     response.render("testIndex", { tasks });
 });
 
+app.get('/task/new', (req, res) => {
+    res.redirect('/createTask')
+    res.
+})
+
 app.listen(8080, () => {
     console.log("Iniciei o servidor da silva");
 });
