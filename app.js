@@ -27,6 +27,10 @@ app.get('/testIndex', (request, response) => {
     response.render("testIndex", { tasks });
 });
 
+const router  = require('./backend/routes');
+
+app.use(router);
+
 app.listen(8080, () => {
     console.log("Iniciei o servidor da silva");
 });
