@@ -27,16 +27,9 @@ app.get('/testIndex', (request, response) => {
     response.render("testIndex", { tasks });
 });
 
-<<<<<<< HEAD
-app.get('/task/new', (req, res) => {
-    res.redirect('/createTask')
-    res.
-})
-=======
 const router  = require('./backend/routes');
 
 app.use(router);
->>>>>>> main
 
 app.listen(8080, () => {
     console.log("Iniciei o servidor da silva");
